@@ -2,24 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT, DESARROLLO WEB">
+    <meta name="description" content="Pagina Hecha usando w3school">
+    <meta name="author" content="Brian Edrei">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/terminal.ico">
     <title>Tutorial de html</title>
     <style>
-        a:link{
-            color: green;
-            background-color: transparent;
+        *{
+            box-sizing: border-box;
+        }
+        #menu{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:white;
+        }
+        #seccion{
+            float:left;
+        }
+        #seccion a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding:16px;
             text-decoration: none;
         }
-        a:visited{
-            color: cornflowerblue;
-            background-color: transparent;
-            text-decoration:none;
+        #seccion a:hover{
+            background-color: greenyellow;
         }
-        a:active{
-            color:yellow;
-            text-decoration: underline;
+        #sobreMi{
+            border: 3px solid black;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 30px;
+            padding-right: 5px;
         }
         #admirando{
             width: 400px;
@@ -27,46 +46,97 @@
         }
         table,th,td{
             border:1px solid black;
+            padding:10px;
+        }
+        #datos{
+            height:60px
+        }
+        #gato{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #circulo{
+            background-color: #96D4D4;
+            text-align: center;
+        }
+        #marcador,#numeros{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 30%;
+            height: 20%;
+            text-align:center;
+            padding-top:10px;
+            padding-bottom:15px;
+            padding-left: 50px;
+            padding-right:50px;
+            border-spacing: 10px;
+        }
+        #titulos{
+            border: 1px solid black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: greenyellow;
+        }
+        #nombres{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 55px;
+            height: 55px;
+            text-align: center;
+        }
+        #alumnos:nth-child(even){
+            background-color:#D6EEEE;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#bienvenida">Bienvenida</a>
-        <a href="#encabezado">Encabezados</a>
-        <a href="#parrafos">Parrafos</a>
-        <a href="#citas">Citas</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#tablas">Tablas</a>
-    </nav>
-    <h1 id="bienvenida">Bienvenido al mundo del Desarrollo Web</h1>
-    <p>
-        Felicidades iniciaste el curso de desarrollo web, donde vamos a ver html, css, y javascript.
-    </p>
-    <p>
-        Me llamo Brian Edrei, si quieres saber más de programacion y te gusta el curso , te invito a
-        que me sigas en mis redes sociales. <a href="https://beacons.page/bemg_develop">Redes Sociales</a>
-        <a href="mailto:al221711721@gmail.com" target="_blank">Envia un correo</a>
-    </p>
-    <img src="https://media-exp1.licdn.com/dms/image/D4E35AQFXETCKdfRd-w/profile-framedphoto-shrink_200_200/0/1637902619556?e=1638064800&v=beta&t=4IVappPDAX8hZh-CXdLgr5EFEl3AzjaP7LD_GEKARz0"
-    alt="foto_perfil">
-    <hr>
-    <h2 id="encabezado">Encabezados</h2>
-    <p>
-        En html se manejan 6 distintos encabezados, que se manejan del más importante H1 hasta el menos importante H6,<br>
-        los titulos son importante ya que el navegador los usa para ver como esta la estructura y el contenido de la pagina web.
-    </p>
-    <hr>
-    <h2 id="parrafos">Parrafos</h2>
-    <p>
-        Los parrafos siempre comienza en una nueca linea y los navegadores añaden automaticamebte un espacio en blanco <br>
-        (un margen) antes y despues de un parrafo. <br>
-        Para poder hacer un salto de linea existe la etiqueta br  que no comienza un nuevo parrafo, y exite la etiqueta hr <br>
-        de igual manera que br, hace un salto de pagina, pero este se usa para escribir otro parrafo nuevo. <br>
-        Para el caso de los poemas exite la etiqueta "pre" ya que tiene una tipografia por defecto y conserva los espacios como
-        saltos de linea.
-    </p>
-    <hr>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li id="seccion"><a href="#bienvenida">Bienvenida</a></li>
+                <li id="seccion"><a href="#encabezado">Encabezados</a></li>
+                <li id="seccion"><a href="#parrafos">Parrafos</a></li>
+                <li id="seccion"><a href="#citas">Citas</a></li>
+                <li id="seccion"><a href="#galeria">Galeria</a></li>
+                <li id="seccion"><a href="#tablas">Tablas</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <section id="presentacion">
+        <div id="fotoPerfil">
+            <img src="https://media-exp1.licdn.com/dms/image/D4E35AQFXETCKdfRd-w/profile-framedphoto-shrink_200_200/0/1637902619556?e=1638064800&v=beta&t=4IVappPDAX8hZh-CXdLgr5EFEl3AzjaP7LD_GEKARz0"
+            alt="foto_perfil">
+        </div>
+        <div id="sobreMi">
+            <h1 id="bienvenida">Bienvenido al mundo del Desarrollo Web</h1>
+            <p>
+                Felicidades iniciaste el curso de desarrollo web, donde vamos a ver html, css, y javascript.
+            </p>
+            <p>
+                Me llamo Brian Edrei, si quieres saber más de programacion y te gusta el curso , te invito a
+                que me sigas en mis redes sociales. <a href="https://beacons.page/bemg_develop">Redes Sociales</a>
+                <a href="mailto:al221711721@gmail.com" target="_blank">Envia un correo</a>
+            </p>
+        </div>
+        <hr>
+    </section>
+    <section id="">
+        <h2 id="encabezado">Encabezados</h2>
+        <p>
+            En html se manejan 6 distintos encabezados, que se manejan del más importante H1 hasta el menos importante H6,<br>
+            los titulos son importante ya que el navegador los usa para ver como esta la estructura y el contenido de la pagina web.
+        </p>
+        <hr>
+        <h2 id="parrafos">Parrafos</h2>
+        <p>
+            Los parrafos siempre comienza en una nueca linea y los navegadores añaden automaticamebte un espacio en blanco <br>
+            (un margen) antes y despues de un parrafo. <br>
+            Para poder hacer un salto de linea existe la etiqueta br  que no comienza un nuevo parrafo, y exite la etiqueta hr <br>
+            de igual manera que br, hace un salto de pagina, pero este se usa para escribir otro parrafo nuevo. <br>
+            Para el caso de los poemas exite la etiqueta "pre" ya que tiene una tipografia por defecto y conserva los espacios como
+            saltos de linea.
+        </p>
+        <hr>
+    </section>
     <h2 id="formatos">Formato de textos</h2>
     <p>Exiten varios tipos de etiquetas para formatos de textos, vamos a en listar esas etiquetas.</p>
     <ul>
@@ -119,7 +189,7 @@
             </p>
             <p>
                 Hanma Baki-
-                <q>sss
+                <q>Que es la fuerza?, El poder de hacer la voluntad de uno
                 </q>
             </p>
         </li>
@@ -166,17 +236,139 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="datos">
                     <td>Jesus Romero</td>
                     <td>Los fantasmas</td>
                     <td><a href="">Cancion</a></td>
                 </tr>
-                <tr>
+                <tr id="datos">
                     <td>skillet</td>
                     <td>start</td>
                     <td><a href="">Cancion</a></td>
                 </tr>
             </tbody>
         </table>
+    <hr>
+    <h2>Juego de gato</h2>
+    <table id="gato" width="30%">
+        <tr id="circulo" width="20%">
+            <td>x</td>
+            <td></td>
+            <td>o</td>
+        </tr>
+        <tr id="circulo">
+            <td>o</td>
+            <td>x</td>
+            <td></td>
+        </tr>
+        <tr id="circulo">
+            <td>o</td>
+            <td></td>
+            <td>x</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Marcador de telefono</h2>
+    <table id="marcador">
+        <tr id="numeros">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr id="numeros">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr id="numeros">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr id="numeros">
+            <td>*</td>
+            <td>0</td>
+            <td>#</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <caption>Lista de contactos</caption>
+        <tr id="titulos">
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Email</th>
+        </tr>
+        <tr id="nombres">
+            <td>Abdias</td>
+            <td>Venegaz</td>
+            <td>Abdias.Venegaz@gmail.com</td>
+        </tr>
+        <tr id="nombres">
+            <td>Tonatiuh</td>
+            <td>Velasquez</td>
+            <td>Tona.velazquez@gmail.com</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <caption>Listas de calificaciones</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Promedio</th>
+        </tr>
+        <tr id="alumnos">
+            <td>Brian E.</td>
+            <td>Mtz. Gr.</td>
+            <td>9.5</td>
+        </tr>
+        <tr id="alumnos">
+            <td>Ivan</td>
+            <td>Venegaz</td>
+            <td>9.7</td>
+        </tr>
+        <tr id="alumnos">
+            <td>Karina</td>
+            <td>Sanchez</td>
+            <td>8.0</td>
+        </tr>
+        <tr id="alumnos">
+            <td>Alondra</td>
+            <td>Caballero</td>
+            <td>10.0</td>
+        </tr>
+        <tr id="alumnos">
+            <td>Jose</td>
+            <td>Gomez</td>
+            <td>6.0</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Listas de compras</h2>
+    <ul>
+        <li>Cafe</li>
+        <li>Leche</li>
+        <li>Arroz</li>
+        <li>Refresco</li>
+    </ul>
+    <ol>
+        <li>Tecnologia</li>
+        <li>Deporte</li>
+        <li>Ropa</li>
+        <li>Higiene</li>
+    </ol>
+    <dl>
+        <dt>Cafe</dt>
+        <dd> -Cafe colombiano</dd>
+        <dt>Leche</dt>
+        <dd> -Leche deslactozada</dd>
+    </dl>
+    <ul>
+        <li style="list-style-type: circle;">Telefonos</li>
+        <li style="list-style-type: square;">Computadoras</li>
+        <li style="list-style-type: none;">Laptop</li>
+        <li>Television</li>
+    </ul>
 </body>
 </html>
