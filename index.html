@@ -98,7 +98,6 @@
         }
         footer{
             background-color:greenyellow;
-
         }
     </style>
 </head>
@@ -388,9 +387,71 @@
         <h2>Formulario</h2>
         <form action="">
             <label for="texto">Caja de texto</label>
-            <input  id="texto" type="text">
-            <label for="radio">Radios</label>
-            <input id="radio" type="text">
+            <input  id="texto" type="text" autocomplete="on">
+            <label for="password">password</label>
+            <input type="password"  id="password">
+            <label for="color">Color</label>
+            <input type="color" id="color">
+            <label for="dia">Dia</label>
+            <input type="date" id="dia"><br>
+            <label for="dia_local">dia local</label>
+            <input type="datetime-local" id="dia_local">
+            <label for="email">Correo</label>
+            <input type="email" id="email">
+            <label for="file">Adjuntar Archivo</label>
+            <input type="file" id="file"><br>
+            <label for="imagen">Imagen</label>
+            <input type="image" src="/img/terminal.ico" alt="">
+            <label for="mes">mes</label>
+            <input type="month" id="mes">
+            <label for="number">Numeros</label>
+            <input type="number" id="number">
+            <label for="busca">Buscar</label>
+            <input type="search" id="busca"><br>
+            <label for="tel">telefono</label>
+            <input type="tel" id="tel">
+            <label for="hide">ocultos</label>
+            <input type="hidden" id="hidden">
+            <h4>Radios</h4>
+            <label for="html">HTML</label>
+            <input id="html" type="radio">
+            <label for="css">CSS</label>
+            <input id="css" type="radio">
+            <label for="javascript">Javascript</label>
+            <input id="javascript" type="radio">
+            <h4>Checkbox</h4>
+            <input type="checkbox" id="Aphtml">
+            <label for="Aphtml">Aprendi Html</label>
+            <input type="checkbox" id="Apcss">
+            <label for="Apcss">Aprendi Css</label>
+            <input type="checkbox" id="Apjavascript">
+            <label for="Apjavascript">Aprendi javascript </label><br>
+            <h4 for="trabajo">Seleccionar</h4>
+            <select id="trabajo" multiple>
+                <option>Desarrollo web</option>
+                <option>Desarrollo de software</option>
+                <option>Inteligencia Artificial</option>
+            </select><br>
+            <label for="descripcion">Descripcion</label><br>
+            <textarea id="descripcion" cols="30" rows="10"></textarea><br>
+            <h4>Data list</h4>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            0
+            <input type="range" name="a" id="a" value="50">
+            100 +
+            <input type="number" name="b" id="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit" value="submit">
+            <input type="reset">
         </form>
     <footer>
         copyright:Brian E.
