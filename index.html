@@ -10,6 +10,12 @@
     <link rel="icon" href="/img/terminal.ico">
     <title>Tutorial de html</title>
     <style>
+        @media (max-with: 600px) {
+            section{
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
         *{
             box-sizing: border-box;
         }
@@ -18,7 +24,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color:white;
+            background-color:#6666;
         }
         #seccion{
             float:left;
@@ -33,12 +39,17 @@
         #seccion a:hover{
             background-color: greenyellow;
         }
+        #foto_perfil{
+            width:170px;
+            border-radius: 100px;
+            float:left;
+        }
         #sobreMi{
             border: 3px solid black;
             padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 30px;
-            padding-right: 5px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+            padding-right: 20px;
         }
         #admirando{
             width: 400px;
@@ -85,6 +96,10 @@
         #alumnos:nth-child(even){
             background-color:#D6EEEE;
         }
+        footer{
+            background-color:greenyellow;
+
+        }
     </style>
 </head>
 <body>
@@ -102,10 +117,8 @@
         <hr>
     </header>
     <section id="presentacion">
-        <div id="fotoPerfil">
             <img src="https://media-exp1.licdn.com/dms/image/D4E35AQFXETCKdfRd-w/profile-framedphoto-shrink_200_200/0/1637902619556?e=1638064800&v=beta&t=4IVappPDAX8hZh-CXdLgr5EFEl3AzjaP7LD_GEKARz0"
-            alt="foto_perfil">
-        </div>
+            alt="foto_perfil" id="foto_perfil">
         <div id="sobreMi">
             <h1 id="bienvenida">Bienvenido al mundo del Desarrollo Web</h1>
             <p>
@@ -136,6 +149,7 @@
             saltos de linea.
         </p>
         <hr>
+        <a href=""><button>Ir a inicio</button></a>
     </section>
     <h2 id="formatos">Formato de textos</h2>
     <p>Exiten varios tipos de etiquetas para formatos de textos, vamos a en listar esas etiquetas.</p>
@@ -219,7 +233,7 @@
     </ul>
     <hr>
     <h2 id="galeria">Galerias de fotos</h2>
-    <img src="/img/sol_toluca.jpg" alt="cosmovitral" srcset="">
+    <img src="/img/sol_toluca.jpg" alt="cosmovitral">
     <img src="/img/princes.jpg" alt="princess">
     <img src="/img/motivado.jpg" alt="motivado" style="width:500px; height:500px;">
     <img src="/img/jugando.jpg" alt="jugando" width="500" height="500">
@@ -370,5 +384,16 @@
         <li style="list-style-type: none;">Laptop</li>
         <li>Television</li>
     </ul>
+    <hr>
+        <h2>Formulario</h2>
+        <form action="">
+            <label for="texto">Caja de texto</label>
+            <input  id="texto" type="text">
+            <label for="radio">Radios</label>
+            <input id="radio" type="text">
+        </form>
+    <footer>
+        copyright:Brian E.
+    </footer>
 </body>
 </html>
