@@ -96,10 +96,47 @@
         #alumnos:nth-child(even){
             background-color:#D6EEEE;
         }
+        #div1{
+            width: 120px;
+            height: 120px;
+            padding:10px;
+            border:1px solid #aaaaaa
+        }
         footer{
             background-color:greenyellow;
         }
     </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text",ev.target.id);
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data))
+        }
+        var w;
+
+        function startWorker() {
+            if (typeof(Worker) !== "undefined") {
+                if (typeof(w) == "undefined") {
+                    w = new Worker("demo_worker.js");
+                }
+                w.onmessage = function (event) {
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            }else{
+                document.getElementById("result").innerHTML = "Sorry! No web Worker support.";
+            }
+        }
+        function stopWorker(){
+            w.terminate();
+            w = undefined;
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -453,6 +490,29 @@
             <input type="submit" value="submit">
             <input type="reset">
         </form>
+        <div id="multimedia">
+            <h3>Video</h3>
+            <video width="425"height="240" controls>
+                <source src="/video/bienvenido.mp4" type="video/mp4">
+            </video><br>
+            <h3>Musica</h3>
+            <audio controls>
+                <source src="/audio/Eminem Ft. T.I. - That's All She Wrote (feat. Eminem) (www.setbeat.com).mp3" type=audio/mp3>
+            </audio><br>
+            <iframe width="220" height="220"
+            src="https://www.youtube.com/watch?v=GpEGZVhvcTI"></iframe>
+        </div>
+        <div id="Contador">
+            <h4>Contador</h4>
+            <p>Count number: <output id="result"></output></p>
+            <button onclick="startWorker()">Start Worker</button>
+            <button onclick="stopWorker()">Stop Worker</button>
+        </div><br>
+        <div>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <img src="/img/terminal.ico" id="drag1" draggable="true"
+            ondragstart="drag(event)" width="100" height="100"></img>
+        </div>
     <footer>
         copyright:Brian E.
     </footer>
