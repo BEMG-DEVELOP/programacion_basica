@@ -1,0 +1,95 @@
+@media (max-with: 600px) {
+    section{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#6666;
+}
+#seccion{
+    float:left;
+}
+#seccion a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding:16px;
+    text-decoration: none;
+}
+#seccion a:hover{
+    background-color: greenyellow;
+}
+#foto_perfil{
+    width:170px;
+    border-radius: 100px;
+    float:left;
+}
+#sobreMi{
+    border: 3px solid black;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+#admirando{
+    width: 400px;
+    height: 400px;
+}
+table,th,td{
+    border:1px solid black;
+    padding:10px;
+}
+#datos{
+    height:60px
+}
+#gato{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#circulo{
+    background-color: #96D4D4;
+    text-align: center;
+}
+#marcador,#numeros{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 30%;
+    height: 20%;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:15px;
+    padding-left: 50px;
+    padding-right:50px;
+    border-spacing: 10px;
+}
+#titulos{
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: greenyellow;
+}
+#nombres{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+}
+#alumnos:nth-child(even){
+    background-color:#D6EEEE;
+}
+#div1{
+    width: 120px;
+    height: 120px;
+    padding:10px;
+    border:1px solid #aaaaaa
+}
+footer{
+    background-color:greenyellow;
+}
