@@ -1,3 +1,4 @@
+/* La hojas de estilos son para ponerle color y formato a las paginas*/
 @media (max-with: 600px) {
     section{
         -webkit-flex-direction: column;
