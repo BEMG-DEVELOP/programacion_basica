@@ -10,42 +10,12 @@
     <link rel="icon" href="/img/terminal.ico">
     <link rel="stylesheet" href="estilos.css">
     <title>Tutorial de html</title>
-    <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
-        function drag(ev) {
-            ev.dataTransfer.setData("text",ev.target.id);
-        }
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data))
-        }
-        var w;
-
-        function startWorker() {
-            if (typeof(Worker) !== "undefined") {
-                if (typeof(w) == "undefined") {
-                    w = new Worker("demo_worker.js");
-                }
-                w.onmessage = function (event) {
-                    document.getElementById("result").innerHTML = event.data;
-                };
-            }else{
-                document.getElementById("result").innerHTML = "Sorry! No web Worker support.";
-            }
-        }
-        function stopWorker(){
-            w.terminate();
-            w = undefined;
-        }
-    </script>
 </head>
 <body>
     <header>
         <nav>
             <ul id="menu">
+                <img src="/img/terminal.ico" alt="logo" id="logo">
                 <li id="seccion"><a href="#bienvenida">Bienvenida</a></li>
                 <li id="seccion"><a href="#encabezado">Encabezados</a></li>
                 <li id="seccion"><a href="#parrafos">Parrafos</a></li>
@@ -54,134 +24,143 @@
                 <li id="seccion"><a href="#tablas">Tablas</a></li>
             </ul>
         </nav>
-        <hr>
     </header>
     <section id="presentacion">
             <img src="https://media-exp1.licdn.com/dms/image/D4E35AQFXETCKdfRd-w/profile-framedphoto-shrink_200_200/0/1637902619556?e=1638064800&v=beta&t=4IVappPDAX8hZh-CXdLgr5EFEl3AzjaP7LD_GEKARz0"
             alt="foto_perfil" id="foto_perfil">
         <div id="sobreMi">
             <h1 id="bienvenida">Bienvenido al mundo del Desarrollo Web</h1>
-            <p>
+            <p id="resumen">
                 Felicidades iniciaste el curso de desarrollo web, donde vamos a ver html, css, y javascript.
-            </p>
-            <p>
                 Me llamo Brian Edrei, si quieres saber más de programacion y te gusta el curso , te invito a
-                que me sigas en mis redes sociales. <a href="https://beacons.page/bemg_develop">Redes Sociales</a>
-                <a href="mailto:al221711721@gmail.com" target="_blank">Envia un correo</a>
+                que me sigas en mis redes sociales.
+                <a href="https://beacons.page/bemg_develop"><button id="redes">Redes Sociales</button></a>
+                <a href="mailto:al221711721@gmail.com" target="_blank"><button id="correo" >Envia un correo</button></a>
             </p>
         </div>
-        <hr>
     </section>
-    <section id="">
-        <h2 id="encabezado">Encabezados</h2>
-        <p>
-            En html se manejan 6 distintos encabezados, que se manejan del más importante H1 hasta el menos importante H6,<br>
-            los titulos son importante ya que el navegador los usa para ver como esta la estructura y el contenido de la pagina web.
-        </p>
-        <hr>
-        <h2 id="parrafos">Parrafos</h2>
-        <p>
-            Los parrafos siempre comienza en una nueca linea y los navegadores añaden automaticamebte un espacio en blanco <br>
-            (un margen) antes y despues de un parrafo. <br>
-            Para poder hacer un salto de linea existe la etiqueta br  que no comienza un nuevo parrafo, y exite la etiqueta hr <br>
-            de igual manera que br, hace un salto de pagina, pero este se usa para escribir otro parrafo nuevo. <br>
-            Para el caso de los poemas exite la etiqueta "pre" ya que tiene una tipografia por defecto y conserva los espacios como
-            saltos de linea.
-        </p>
-        <hr>
-        <a href=""><button>Ir a inicio</button></a>
+    <section>
+        <div id="box">
+            <div id="informacion">
+                <div id="encabezado">
+                    <h2>Encabezados</h2>
+                    <p>
+                        En html se manejan 6 distintos encabezados, que se manejan del más importante H1 hasta el menos importante H6,<br>
+                        los titulos son importante ya que el navegador los usa para ver como esta la estructura y el contenido de la pagina web.
+                    </p>
+                    <hr>
+                </div>
+                <div id="parrafos">
+                    <h2>Parrafos</h2>
+                    <p>
+                        Los parrafos siempre comienza en una nueca linea y los navegadores añaden automaticamebte un espacio en blanco <br>
+                        (un margen) antes y despues de un parrafo. <br>
+                        Para poder hacer un salto de linea existe la etiqueta br  que no comienza un nuevo parrafo, y exite la etiqueta hr <br>
+                        de igual manera que br, hace un salto de pagina, pero este se usa para escribir otro parrafo nuevo. <br>
+                        Para el caso de los poemas exite la etiqueta "pre" ya que tiene una tipografia por defecto y conserva los espacios como
+                        saltos de linea.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="formatos">
+                <h2>Formato de textos</h2>
+                <p>Exiten varios tipos de etiquetas para formatos de textos, vamos a en listar esas etiquetas.</p>
+                <ul>
+                    <li>
+                        <b>Negritas</b>
+                    </li>
+                    <li>
+                        <strong>Texto Importante</strong>
+                    </li>
+                    <li>
+                        <i>Texto Cursivo</i>
+                    </li>
+                    <li>
+                        <em>Texto Enfatisado</em>
+                    </li>
+                    <li>
+                        <mark>Texto Marcado</mark>
+                    </li>
+                    <li>
+                        <small>Texto más pequeño</small>
+                    </li>
+                    <li>
+                        <del>Texto eliminado </del>
+                    </li>
+                    <li>
+                        <ins>Texto Insertado</ins>
+                    </li>
+                    <li>
+                        <sub>Texto de Subindice</sub>
+                    </li>
+                    <li>
+                        <sup>Texto en superindice</sup>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div id="box">
+        <div  id="citas">
+            <h2>Elementos de citas</h2>
+                <p>Para citar algun texto, frase o parrafo existen las siguiente etiquetas</p>
+            <ul>
+                <li style="background-color: dodgerblue;">
+                    <p>La etiqueta blockquote define una seccion que se cita de otra fuente, los navegadores suelen aplicar sangria a estos.</p>
+                    <blockquote cite="https://www.universia.net/mx/actualidad/empleo/10-frases-inspiradoras-steve-jobs-1132052.html">
+                        Estoy convencido de que la mitad de lo que separa a los emprendedores exitosos de los que no triunfan es la perseverancia,<br>
+                        Si vives cada día de tu vida como si fuera el último, algún día realmente tendrás razón. <br>
+                        Cuando se innova, se corre el riesgo de cometer errores.
+                    </blockquote>
+                </li>
+                <li style="background-color: rgb(47, 99, 22);">
+                    <p>
+                        La etiqueta "q" define una cita breve.
+                    </p>
+                    <p>
+                        Hanma Baki-
+                        <q>Que es la fuerza?, El poder de hacer la voluntad de uno
+                        </q>
+                    </p>
+                </li>
+                <li style="background-color: rgb(255, 0, 0);">
+                    <p>La etiqueta abbr define una abreviatura o un acronimo</p>
+                    <p><abbr title="Organizacion Mundial de la Salud">OMS</abbr> fue fundada el 7 de abril 1948.</p>
+                </li>
+                <li style="background-color:#ffa500;">
+                    <p>La etiqueta address define informacion de contacto del autor.</p>
+                    <address>
+                        Escrito por Brian E.<br>
+                        Siguelo en: <br>
+                        https://beacons.page/bemg_develop<br>
+                        Toluca, México.
+                    </address>
+                </li>
+                <li style="background-color: #6a5acd;">
+                    <p>La etiqueta cite, define el tirulo de una obra creativa</p>
+                    <p>
+                        <cite>La  moricion</cite> hecho por Miriam,2021
+                    </p>
+                </li>
+                <li style="background-color: hsl(750, 50%, 40%);" >
+                    <p>La etiqueta se utiliza para anular la direccion actualo del texto</p>
+                    <bdo dir="rtl">este txto esta escrito de derecha a izquierda</bdo>
+                </li>
+            </ul>
+        </div>
     </section>
-    <h2 id="formatos">Formato de textos</h2>
-    <p>Exiten varios tipos de etiquetas para formatos de textos, vamos a en listar esas etiquetas.</p>
-    <ul>
-        <li>
-            <b>Negritas</b>
-        </li>
-        <li>
-            <strong>Texto Importante</strong>
-        </li>
-        <li>
-            <i>Texto Cursivo</i>
-        </li>
-        <li>
-            <em>Texto Enfatisado</em>
-        </li>
-        <li>
-            <mark>Texto Marcado</mark>
-        </li>
-        <li>
-            <small>Texto más pequeño</small>
-        </li>
-        <li>
-            <del>Texto eliminado </del>
-        </li>
-        <li>
-            <ins>Texto Insertado</ins>
-        </li>
-        <li>
-            <sub>Texto de Subindice</sub>
-        </li>
-        <li>
-            <sup>Texto en superindice</sup>
-        </li>
-    </ul>
-    <hr>
-    <h2 id="citas">Elementos de citas</h2>
-        <p>Para citar algun texto, frase o parrafo existen las siguiente etiquetas</p>
-    <ul>
-        <li style="background-color: dodgerblue;">
-            <p>La etiqueta blockquote define una seccion que se cita de otra fuente, los navegadores suelen aplicar sangria a estos.</p>
-            <blockquote cite="https://www.universia.net/mx/actualidad/empleo/10-frases-inspiradoras-steve-jobs-1132052.html">
-                Estoy convencido de que la mitad de lo que separa a los emprendedores exitosos de los que no triunfan es la perseverancia,<br>
-                Si vives cada día de tu vida como si fuera el último, algún día realmente tendrás razón. <br>
-                Cuando se innova, se corre el riesgo de cometer errores. Es mejor admitirlo rápidamente y continuar con otra innovación
-            </blockquote>
-        </li>
-        <li style="background-color: rgb(47, 99, 22);">
-            <p>
-                La etiqueta "q" define una cita breve.
-            </p>
-            <p>
-                Hanma Baki-
-                <q>Que es la fuerza?, El poder de hacer la voluntad de uno
-                </q>
-            </p>
-        </li>
-        <li style="background-color: rgb(255, 0, 0);">
-            <p>La etiqueta abbr define una abreviatura o un acronimo</p>
-            <p><abbr title="Organizacion Mundial de la Salud">OMS</abbr> fue fundada el 7 de abril 1948.</p>
-        </li>
-        <li style="background-color:#ffa500;">
-            <p>La etiqueta address define informacion de contacto del autor.</p>
-            <address>
-                Escrito por Brian E.<br>
-                Siguelo en: <br>
-                https://beacons.page/bemg_develop<br>
-                Toluca, México.
-            </address>
-        </li>
-        <li style="background-color: #6a5acd;">
-            <p>La etiqueta cite, define el tirulo de una obra creativa</p>
-            <p>
-                <cite>La  moricion</cite> hecho por Miriam,2021
-            </p>
-        </li>
-        <li style="background-color: hsl(750, 50%, 40%);" >
-            <p>La etiqueta se utiliza para anular la direccion actualo del texto</p>
-            <bdo dir="rtl">este txto esta escrito de derecha a izquierda</bdo>
-        </li>
-    </ul>
-    <hr>
     <h2 id="galeria">Galerias de fotos</h2>
-    <img src="/img/sol_toluca.jpg" alt="cosmovitral">
-    <img src="/img/princes.jpg" alt="princess">
-    <img src="/img/motivado.jpg" alt="motivado" style="width:500px; height:500px;">
-    <img src="/img/jugando.jpg" alt="jugando" width="500" height="500">
+    <img id="cosmovitral"   src="/img/sol_toluca.jpg" alt="cosmovitral">
+    <img id="princes"   src="/img/princes.jpg" alt="princess">
+    <img id="motivado"  src="/img/motivado.jpg" alt="motivado">
+    <img id="jugando"   src="/img/jugando.jpg" alt="jugando">
     <img id="admirando" src="/img/admirando.jpg" alt="admirando" >
     <hr>
     <h2 id="tablas">Tablas</h2>
         <h3>Tabla de musica</h3>
-        <table>
+        <table id="musica">
             <thead>
                 <tr>
                     <td>Nombre del Artista</td>
