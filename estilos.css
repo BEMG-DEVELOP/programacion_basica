@@ -2,53 +2,46 @@
     ul.topnav li.right,
     ul.topnav li {float: none;}
 }
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+
 *{
     box-sizing: border-box;
 }
 body{
     background:rgb(206, 135, 28);
 }
-#scroll{
-
+header{
+    padding: 20px;
+    text-align: center
+}
+h2{
+    font-size: 50px;
 }
 /**Inicio del Menu*/
 nav{
     border-left: 10px solid black;
     border-right: 10px solid black;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#6666;
     border-radius: 10px;
-    list-style: none;
+    background-color:#6666;
 }
 ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 #seccion,a{
+    float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 14px 16px;
     text-decoration: none;
-    float: left;
 }
 #seccion, a:hover{
     background-color:#6666;
 }
 /**Fin del menu*/
 /**Inicia Contenido*/
+    /* Inicio Presentacion */
 section{
+    background-color:gray;
     border: 3px solid green;
 }
 #foto_perfil{
@@ -57,23 +50,13 @@ section{
 }
 #descripcion{
     font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
     background-color:#6666;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: absolute;
+    border-radius: 15px;
     font-size:20px;
     color: white;
-    left: 250px;
-    right:350px;
-    top: 175px;
 }
-#foto1, #foto2, #foto3, #foto4, #foto5{
-    padding-top: 15px;
-    height: 430px;
-    padding: 5px;
-    width:250px;
-    left: 50px;
-}
+    /*Fin de Presentacion*/
 article{
     border: 3px solid yellow;
 }
@@ -84,18 +67,27 @@ article{
 }
 #col1,#col2,#col3{
     float: left;
-    width:33.33%;
     padding: 50px;
     opacity: 80%;
 }
 #col1{
     background-color: #bbb;
+    width:25%;
 }
 #col2{
     background-color: #ccc;
+    width:50%;
 }
 #col3{
+    width: 25%;
     background-color:#ddd;
+}
+#foto1, #foto2, #foto3, #foto4, #foto5{
+    padding-top: 15px;
+    height: 430px;
+    padding: 5px;
+    width:250px;
+    left: 50px;
 }
 aside{
     border: 3px solid gray;
