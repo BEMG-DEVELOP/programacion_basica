@@ -1,403 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, JAVASCRIPT, DESARROLLO WEB">
-    <meta name="description" content="Pagina Hecha usando w3school">
-    <meta name="author" content="Brian Edrei">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT">
+    <meta name="description" content="Es un proyecto, aprendiendo lo basico HTML,CSS,JAVASCRIPT">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/terminal.ico">
     <link rel="stylesheet" href="estilos.css">
-    <title>Tutorial de html</title>
+    <title>Inicios</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul id="menu">
-                <img src="/img/terminal.ico" alt="logo" id="logo">
-                <li id="seccion"><a href="#bienvenida">Bienvenida</a></li>
-                <li id="seccion"><a href="#encabezado">Encabezados</a></li>
-                <li id="seccion"><a href="#parrafos">Parrafos</a></li>
-                <li id="seccion"><a href="#citas">Citas</a></li>
-                <li id="seccion"><a href="#galeria">Galeria</a></li>
-                <li id="seccion"><a href="#tablas">Tablas</a></li>
-            </ul>
-        </nav>
+        <div id="scroll">
+            <h2>Hola MUndo</h2>
+        </div>
     </header>
-    <section id="presentacion">
-            <img src="https://media-exp1.licdn.com/dms/image/D4E35AQFXETCKdfRd-w/profile-framedphoto-shrink_200_200/0/1637902619556?e=1638064800&v=beta&t=4IVappPDAX8hZh-CXdLgr5EFEl3AzjaP7LD_GEKARz0"
-            alt="foto_perfil" id="foto_perfil">
-        <div id="sobreMi">
-            <h1 id="bienvenida">Bienvenido al mundo del Desarrollo Web</h1>
-            <p id="resumen">
-                Felicidades iniciaste el curso de desarrollo web, donde vamos a ver html, css, y javascript.
-                Me llamo Brian Edrei, si quieres saber más de programacion y te gusta el curso , te invito a
-                que me sigas en mis redes sociales.
-                <a href="https://beacons.page/bemg_develop"><button id="redes">Redes Sociales</button></a>
-                <a href="mailto:al221711721@gmail.com" target="_blank"><button id="correo" >Envia un correo</button></a>
-            </p>
-        </div>
-    </section>
+    <nav>
+        <ul class="topnav">
+            <li id="seccion"><a href="">Bienvenido</a></li>
+            <li id="seccion"><a href="">Sobre mi</a></li>
+            <li id="seccion"><a href="">Texto</a></li>
+            <li id="seccion"><a href="">Citas</a></li>
+            <li id="seccion"><a href="">Galeria</a></li>
+            <li id="seccion"><a href="">Listas</a></li>
+            <li id="seccion"><a href="">Tablas</a></li>
+        </ul>
+    </nav>
     <section>
-        <div id="box">
-            <div id="informacion">
-                <div id="encabezado">
-                    <h2>Encabezados</h2>
-                    <p>
-                        En html se manejan 6 distintos encabezados, que se manejan del más importante H1 hasta el menos importante H6,<br>
-                        los titulos son importante ya que el navegador los usa para ver como esta la estructura y el contenido de la pagina web.
-                    </p>
-                    <hr>
-                </div>
-                <div id="parrafos">
-                    <h2>Parrafos</h2>
-                    <p>
-                        Los parrafos siempre comienza en una nueca linea y los navegadores añaden automaticamebte un espacio en blanco <br>
-                        (un margen) antes y despues de un parrafo. <br>
-                        Para poder hacer un salto de linea existe la etiqueta br  que no comienza un nuevo parrafo, y exite la etiqueta hr <br>
-                        de igual manera que br, hace un salto de pagina, pero este se usa para escribir otro parrafo nuevo. <br>
-                        Para el caso de los poemas exite la etiqueta "pre" ya que tiene una tipografia por defecto y conserva los espacios como
-                        saltos de linea.
-                    </p>
-                    <hr>
-                </div>
+        <div id="presentacion">
+            <img id="foto_perfil"
+            src="https://media-exp1.licdn.com/dms/image/D4E35AQFXETCKdfRd-w/profile-framedphoto-shrink_200_200/0/1637902619556?e=1638576000&v=beta&t=1J08J7ufnEj4Ez7zGL5DoGFSr22QAY9MkNNomFeUv2E" 
+            alt="foto_perfil">
+            <div id="descripcion">
+                <p>
+                    Hola, mi nombre es Brian Edrei, soy Mexicano, tengo 22 años,
+                    soy Ingeniero en Sistemas de la Informacion,estoy reforzando
+                    mis conocimientos, en HTML, CSS y JAVASCRIPT. <br>
+                    Estoy realizando por ramas Html, Css y JavaScript, y por ultimo
+                    voy a fucionar las ramas.<br>
+                    Aunque no soy muy bueno en el diseño, pero vamos mejorando.
+                </p>
             </div>
-        </div>
-        <div id="box">
-            <div id="formatos">
-                <h2>Formato de textos</h2>
-                <p>Exiten varios tipos de etiquetas para formatos de textos, vamos a en listar esas etiquetas.</p>
-                <ul>
-                    <li>
-                        <b>Negritas</b>
-                    </li>
-                    <li>
-                        <strong>Texto Importante</strong>
-                    </li>
-                    <li>
-                        <i>Texto Cursivo</i>
-                    </li>
-                    <li>
-                        <em>Texto Enfatisado</em>
-                    </li>
-                    <li>
-                        <mark>Texto Marcado</mark>
-                    </li>
-                    <li>
-                        <small>Texto más pequeño</small>
-                    </li>
-                    <li>
-                        <del>Texto eliminado </del>
-                    </li>
-                    <li>
-                        <ins>Texto Insertado</ins>
-                    </li>
-                    <li>
-                        <sub>Texto de Subindice</sub>
-                    </li>
-                    <li>
-                        <sup>Texto en superindice</sup>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    <div id="box">
-        <div  id="citas">
-            <h2>Elementos de citas</h2>
-                <p>Para citar algun texto, frase o parrafo existen las siguiente etiquetas</p>
-            <ul>
-                <li style="background-color: dodgerblue;">
-                    <p>La etiqueta blockquote define una seccion que se cita de otra fuente, los navegadores suelen aplicar sangria a estos.</p>
-                    <blockquote cite="https://www.universia.net/mx/actualidad/empleo/10-frases-inspiradoras-steve-jobs-1132052.html">
-                        Estoy convencido de que la mitad de lo que separa a los emprendedores exitosos de los que no triunfan es la perseverancia,<br>
-                        Si vives cada día de tu vida como si fuera el último, algún día realmente tendrás razón. <br>
-                        Cuando se innova, se corre el riesgo de cometer errores.
-                    </blockquote>
-                </li>
-                <li style="background-color: rgb(47, 99, 22);">
-                    <p>
-                        La etiqueta "q" define una cita breve.
-                    </p>
-                    <p>
-                        Hanma Baki-
-                        <q>Que es la fuerza?, El poder de hacer la voluntad de uno
-                        </q>
-                    </p>
-                </li>
-                <li style="background-color: rgb(255, 0, 0);">
-                    <p>La etiqueta abbr define una abreviatura o un acronimo</p>
-                    <p><abbr title="Organizacion Mundial de la Salud">OMS</abbr> fue fundada el 7 de abril 1948.</p>
-                </li>
-                <li style="background-color:#ffa500;">
-                    <p>La etiqueta address define informacion de contacto del autor.</p>
-                    <address>
-                        Escrito por Brian E.<br>
-                        Siguelo en: <br>
-                        https://beacons.page/bemg_develop<br>
-                        Toluca, México.
-                    </address>
-                </li>
-                <li style="background-color: #6a5acd;">
-                    <p>La etiqueta cite, define el tirulo de una obra creativa</p>
-                    <p>
-                        <cite>La  moricion</cite> hecho por Miriam,2021
-                    </p>
-                </li>
-                <li style="background-color: hsl(750, 50%, 40%);" >
-                    <p>La etiqueta se utiliza para anular la direccion actualo del texto</p>
-                    <bdo dir="rtl">este txto esta escrito de derecha a izquierda</bdo>
-                </li>
-            </ul>
         </div>
     </section>
-    <h2 id="galeria">Galerias de fotos</h2>
-    <img id="cosmovitral"   src="/img/sol_toluca.jpg" alt="cosmovitral">
-    <img id="princes"   src="/img/princes.jpg" alt="princess">
-    <img id="motivado"  src="/img/motivado.jpg" alt="motivado">
-    <img id="jugando"   src="/img/jugando.jpg" alt="jugando">
-    <img id="admirando" src="/img/admirando.jpg" alt="admirando" >
-    <hr>
-    <h2 id="tablas">Tablas</h2>
-        <h3>Tabla de musica</h3>
-        <table id="musica">
-            <thead>
-                <tr>
-                    <td>Nombre del Artista</td>
-                    <td>Cancions</td>
-                    <td>link</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="datos">
-                    <td>Jesus Romero</td>
-                    <td>Los fantasmas</td>
-                    <td><a href="">Cancion</a></td>
-                </tr>
-                <tr id="datos">
-                    <td>skillet</td>
-                    <td>start</td>
-                    <td><a href="">Cancion</a></td>
-                </tr>
-            </tbody>
-        </table>
-    <hr>
-    <h2>Juego de gato</h2>
-    <table id="gato" width="30%">
-        <tr id="circulo" width="20%">
-            <td>x</td>
-            <td></td>
-            <td>o</td>
-        </tr>
-        <tr id="circulo">
-            <td>o</td>
-            <td>x</td>
-            <td></td>
-        </tr>
-        <tr id="circulo">
-            <td>o</td>
-            <td></td>
-            <td>x</td>
-        </tr>
-    </table>
-    <hr>
-    <h2>Marcador de telefono</h2>
-    <table id="marcador">
-        <tr id="numeros">
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-        <tr id="numeros">
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
-        <tr id="numeros">
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-        <tr id="numeros">
-            <td>*</td>
-            <td>0</td>
-            <td>#</td>
-        </tr>
-    </table>
-    <hr>
-    <table>
-        <caption>Lista de contactos</caption>
-        <tr id="titulos">
-            <th>Nombre</th>
-            <th>Apellidos</th>
-            <th>Email</th>
-        </tr>
-        <tr id="nombres">
-            <td>Abdias</td>
-            <td>Venegaz</td>
-            <td>Abdias.Venegaz@gmail.com</td>
-        </tr>
-        <tr id="nombres">
-            <td>Tonatiuh</td>
-            <td>Velasquez</td>
-            <td>Tona.velazquez@gmail.com</td>
-        </tr>
-    </table>
-    <hr>
-    <table>
-        <caption>Listas de calificaciones</caption>
-        <tr>
-            <th>Nombre</th>
-            <th>Apellidos</th>
-            <th>Promedio</th>
-        </tr>
-        <tr id="alumnos">
-            <td>Brian E.</td>
-            <td>Mtz. Gr.</td>
-            <td>9.5</td>
-        </tr>
-        <tr id="alumnos">
-            <td>Ivan</td>
-            <td>Venegaz</td>
-            <td>9.7</td>
-        </tr>
-        <tr id="alumnos">
-            <td>Karina</td>
-            <td>Sanchez</td>
-            <td>8.0</td>
-        </tr>
-        <tr id="alumnos">
-            <td>Alondra</td>
-            <td>Caballero</td>
-            <td>10.0</td>
-        </tr>
-        <tr id="alumnos">
-            <td>Jose</td>
-            <td>Gomez</td>
-            <td>6.0</td>
-        </tr>
-    </table>
-    <hr>
-    <h2>Listas de compras</h2>
-    <ul>
-        <li>Cafe</li>
-        <li>Leche</li>
-        <li>Arroz</li>
-        <li>Refresco</li>
-    </ul>
-    <ol>
-        <li>Tecnologia</li>
-        <li>Deporte</li>
-        <li>Ropa</li>
-        <li>Higiene</li>
-    </ol>
-    <dl>
-        <dt>Cafe</dt>
-        <dd> -Cafe colombiano</dd>
-        <dt>Leche</dt>
-        <dd> -Leche deslactozada</dd>
-    </dl>
-    <ul>
-        <li style="list-style-type: circle;">Telefonos</li>
-        <li style="list-style-type: square;">Computadoras</li>
-        <li style="list-style-type: none;">Laptop</li>
-        <li>Television</li>
-    </ul>
-    <hr>
-        <h2>Formulario</h2>
-        <form action="">
-            <label for="texto">Caja de texto</label>
-            <input  id="texto" type="text" autocomplete="on">
-            <label for="password">password</label>
-            <input type="password"  id="password">
-            <label for="color">Color</label>
-            <input type="color" id="color">
-            <label for="dia">Dia</label>
-            <input type="date" id="dia"><br>
-            <label for="dia_local">dia local</label>
-            <input type="datetime-local" id="dia_local">
-            <label for="email">Correo</label>
-            <input type="email" id="email">
-            <label for="file">Adjuntar Archivo</label>
-            <input type="file" id="file"><br>
-            <label for="imagen">Imagen</label>
-            <input type="image" src="/img/terminal.ico" alt="">
-            <label for="mes">mes</label>
-            <input type="month" id="mes">
-            <label for="number">Numeros</label>
-            <input type="number" id="number">
-            <label for="busca">Buscar</label>
-            <input type="search" id="busca"><br>
-            <label for="tel">telefono</label>
-            <input type="tel" id="tel">
-            <label for="hide">ocultos</label>
-            <input type="hidden" id="hidden">
-            <h4>Radios</h4>
-            <label for="html">HTML</label>
-            <input id="html" type="radio">
-            <label for="css">CSS</label>
-            <input id="css" type="radio">
-            <label for="javascript">Javascript</label>
-            <input id="javascript" type="radio">
-            <h4>Checkbox</h4>
-            <input type="checkbox" id="Aphtml">
-            <label for="Aphtml">Aprendi Html</label>
-            <input type="checkbox" id="Apcss">
-            <label for="Apcss">Aprendi Css</label>
-            <input type="checkbox" id="Apjavascript">
-            <label for="Apjavascript">Aprendi javascript </label><br>
-            <h4 for="trabajo">Seleccionar</h4>
-            <select id="trabajo" multiple>
-                <option>Desarrollo web</option>
-                <option>Desarrollo de software</option>
-                <option>Inteligencia Artificial</option>
-            </select><br>
-            <label for="descripcion">Descripcion</label><br>
-            <textarea id="descripcion" cols="30" rows="10"></textarea><br>
-            <h4>Data list</h4>
-            <input list="browsers" name="browser">
-            <datalist id="browsers">
-                <option value="Internet Explorer">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-            </datalist>
-            0
-            <input type="range" name="a" id="a" value="50">
-            100 +
-            <input type="number" name="b" id="b" value="50">
-            =
-            <output name="x" for="a b"></output>
-            <br><br>
-            <input type="submit" value="submit">
-            <input type="reset">
-        </form>
-        <div id="multimedia">
-            <h3>Video</h3>
-            <video width="425"height="240" controls>
-                <source src="/video/bienvenido.mp4" type="video/mp4">
-            </video><br>
-            <h3>Musica</h3>
-            <audio controls>
-                <source src="/audio/Eminem Ft. T.I. - That's All She Wrote (feat. Eminem) (www.setbeat.com).mp3" type=audio/mp3>
-            </audio><br>
-            <iframe width="220" height="220"
-            src="https://www.youtube.com/watch?v=GpEGZVhvcTI"></iframe>
+    <article>
+        <div id="columnas">
+            <div id="col1">
+                <h4>Encabezados</h4>
+            </div>
+            <div id="col2">
+                <h4>Parrafos</h4>
+            </div>
+            <div id="col3">
+                <h4>Citas</h4>
+            </div>
         </div>
-        <div id="Contador">
-            <h4>Contador</h4>
-            <p>Count number: <output id="result"></output></p>
-            <button onclick="startWorker()">Start Worker</button>
-            <button onclick="stopWorker()">Stop Worker</button>
-        </div><br>
-        <div>
-            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <img src="/img/terminal.ico" id="drag1" draggable="true"
-            ondragstart="drag(event)" width="100" height="100"></img>
+        <div id="galeria">
+            <img id="foto1" src="/img/sol_toluca.jpg" alt="cosmovitral">
+            <img id="foto2" src="/img/princes.jpg" alt="princess">
+            <img id="foto3" src="/img/motivado.jpg" alt="motivado">
+            <img id="foto4" src="/img/jugando.jpg" alt="jugando">
+            <img id="foto5" src="/img/admirando.jpg" alt="admirado">
         </div>
+    </article>
+    <aside>
+        <div id="tablas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </aside>
     <footer>
-        copyright:Brian E.
     </footer>
 </body>
 </html>
