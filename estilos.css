@@ -7,58 +7,54 @@
     box-sizing: border-box;
 }
 body{
-    background:rgb(206, 135, 28);
+    background-image: linear-gradient(to bottom ,rgba(13, 123, 226, 0.274), rgb(0, 94, 172));
 }
 header{
-    padding: 20px;
-    text-align: center
+    padding: 90px;
+    background-image: url(/img/Logo_sin_fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 h2{
     font-size: 50px;
 }
 /**Inicio del Menu*/
 nav{
-    border-left: 10px solid black;
-    border-right: 10px solid black;
-    border-radius: 10px;
-    background-color:#6666;
 }
 ul{
     overflow: hidden;
 }
 #seccion,a{
     float: left;
+    font-size:20px;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    position: relative;
+    padding-left: 38px;
 }
 #seccion, a:hover{
-    background-color:#6666;
+    background-color:rgba(13, 123, 226, 0.4);
 }
 /**Fin del menu*/
 /**Inicia Contenido*/
     /* Inicio Presentacion */
-section{
-    background-color:gray;
-    border: 3px solid green;
-}
+
 #foto_perfil{
     border-radius: 100%;
     padding: 15px;
+    box-shadow: 0 6px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(235, 233, 232);
 }
 #descripcion{
-    font-family:Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color:#6666;
     border-radius: 15px;
-    font-size:20px;
+    font-size:40px;
     color: white;
 }
-    /*Fin de Presentacion*/
+/*Fin de Presentacion*/
 article{
-    border: 3px solid yellow;
 }
 #columnas::after{
     content: "";
@@ -66,21 +62,32 @@ article{
     display: table;
 }
 #col1,#col2,#col3{
+    font-family:Arial, Helvetica, sans-serif;
+    border-left: 1px solid gray;
     float: left;
     padding: 50px;
     opacity: 80%;
+    height:auto;
 }
 #col1{
-    background-color: #bbb;
+    background-color: transparent;
     width:25%;
 }
 #col2{
-    background-color: #ccc;
+    background-color: transparent;
     width:50%;
 }
 #col3{
     width: 25%;
-    background-color:#ddd;
+    background-color:transparent;
+}
+#titulo{
+    font-size:30px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+#proyecto1,#proyecto2,#proyecto3,#proyecto4,#proyecto5,#proyecto6,#proyecto7{
+    padding: 10px;
 }
 #foto1, #foto2, #foto3, #foto4, #foto5{
     padding-top: 15px;
