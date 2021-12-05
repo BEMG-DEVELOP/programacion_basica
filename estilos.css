@@ -41,11 +41,11 @@ ul{
 /**Fin del menu*/
 /**Inicia Contenido*/
     /* Inicio Presentacion */
-
 #foto_perfil{
     border-radius: 100%;
     padding: 15px;
-    box-shadow: 0 6px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(235, 233, 232);
+    box-shadow: 0 6px 8px 0 #ffffff, 0 6px 20px 0 rgb(235, 233, 232);
+    transition: width 800ms linear;
 }
 #descripcion{
     text-align: center;
@@ -73,6 +73,16 @@ article{
 #col1{
     width:25%;
 }
+#acercade{
+    width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+#acercade:hover{
+    width: 300px;
+    height: 300px;
+}
 #acercade,#habilidades{
     background-color: rgba(128, 128, 128, 0.473);
 }
@@ -86,10 +96,19 @@ article{
     text-decoration-line: underline;
 }
 #proyecto1,#proyecto2,#proyecto3,#proyecto4,#proyecto5,#proyecto6,#proyecto7{
-    padding: 10px;
+    
+    width:60%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
 }
 #consultorio{
-    width:400px;
+    width:100%;
+}
+#resumen{
+    text-align:center;
+    padding: 10px 20px;
+    color:black;
 }
 #foto1, #foto2, #foto3, #foto4, #foto5{
     padding-top: 15px;
