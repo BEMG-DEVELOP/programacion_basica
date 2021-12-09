@@ -1,12 +1,8 @@
-@media screen and (max-width:600px) {
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
-}
-
 *{
     box-sizing: border-box;
 }
 body{
+    margin: 0;
     background-image: linear-gradient(to bottom ,rgba(13, 123, 226, 0.274), rgb(0, 94, 172));
 }
 header{
@@ -19,24 +15,49 @@ h2{
     font-size: 50px;
 }
 /**Inicio del Menu*/
-nav{
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    width:25%;
+    height: 100%;
+    position: fixed;
+    background-color:#333;
 }
-ul{
-    overflow: hidden;
-}
-#seccion,a{
-    float: left;
-    font-size:20px;
+
+#menu li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 16px;
     text-decoration: none;
-    position: relative;
-    padding-left: 38px;
 }
-#seccion, a:hover{
-    background-color:rgba(13, 123, 226, 0.4);
+#menu li a:hover{
+    background-color: #111;
+}
+section article aside footer{
+    margin-left: 25%;
+    padding: 1px 16px;
+    height:1000px;
+}
+@media screen and (max-width:900px) {
+    #menu{
+        width:100%;
+        height:auto;
+        position: relative;
+    }
+    #menu li a{
+        float: left;
+        padding:15px;
+    }
+    section article aside footer{margin-left:0;}
+}
+@media  screen and (max-width:400px){
+    #menu li a{
+        text-align: center;
+        float:none;
+    }
 }
 /**Fin del menu*/
 /**Inicia Contenido*/
