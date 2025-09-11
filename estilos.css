@@ -90,6 +90,9 @@ table,th,td{
     padding:10px;
     border:1px solid #aaaaaa
 }
+img{
+  border-radius:20px
+}
 footer{
     background-color:greenyellow;
     text-align:center;
