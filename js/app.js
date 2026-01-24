@@ -27,3 +27,9 @@ function allowDrop(ev) {
             w.terminate();
             w = undefined;
         }
+        a = 1;
+        b = 2;
+        //alert("El valor de a + b es " + (a + b))
+        let nombre = "";
+        nombre = prompt("¿Cual es tu nombre")
+        alert("Bienvenido "+ nombre)
