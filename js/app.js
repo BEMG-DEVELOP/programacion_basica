@@ -1,2 +1,29 @@
-#En este archivo va a ir  todas las animaciones de  este sitio.
+function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text",ev.target.id);
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data))
+        }
+        var w;
 
+        function startWorker() {
+            if (typeof(Worker) !== "undefined") {
+                if (typeof(w) == "undefined") {
+                    w = new Worker("demo_worker.js");
+                }
+                w.onmessage = function (event) {
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            }else{
+                document.getElementById("result").innerHTML = "Sorry! No web Worker support.";
+            }
+        }
+        function stopWorker(){
+            w.terminate();
+            w = undefined;
+        }

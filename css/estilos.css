@@ -28,9 +28,10 @@
     background-color: greenyellow;
 }
 #foto_perfil{
-    width:170px;
+    width:190px;
     border-radius: 100px;
     float:left;
+    border-color: red;
 }
 #sobreMi{
     border: 3px solid black;
