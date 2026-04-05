@@ -20,7 +20,32 @@
             alert("Elegiste Papel")
         }else if(jugador == 3){
             alert("Elegiste tijeras")
+        }else{
+            alert("Elegiste perder")
         }
+        //Variables de la pc
+        if(pc == 1){
+            alert("Pc eligio Piedra")
+        }else if(pc == 2){
+            alert("Pc eligio Papel")
+        }else if(pc == 3){
+            alert("Pc eligio tijeras")
+        }else{
+            alert("Pc eligio perder")
+        }
+        //Combate
+        if (pc == jugador) {
+            alert("Empate")
+        }else if (jugador == 1 && pc == 3) {
+            alert("Ganaste")
+        }else if (jugador == 2 && pc == 1) {
+            alert("Ganaste")
+        }else if (jugador == 3 && pc == 2) {
+            alert("Ganaste")
+        } else{
+            alert("Perdiste")
+        }
+
     </script>
 </body>
 </html>
