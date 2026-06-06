@@ -6,14 +6,27 @@
 }
 *{
     box-sizing: border-box;
+    
+}
+
+body{
+    border-left:solid black 1px;
+    border-right:solid black 1px;
+}
+header{
+    background-color:rgb(65, 105, 169) !important;
+}
+#contenedor_menu{
+    padding-left: 600px; ;
 }
 #menu{
+    /*margin-left: 600px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#6666;
 }
+
 #seccion{
     float:left;
 }
@@ -21,24 +34,45 @@
     display: block;
     color: white;
     text-align: center;
-    padding:16px;
+    padding:24px;
     text-decoration: none;
 }
 #seccion a:hover{
-    background-color: greenyellow;
+    background-color: #617adb66;
 }
+
 #foto_perfil{
-    width:190px;
-    border-radius: 100px;
-    float:left;
-    border-color: red;
+  width: 200px;
+  margin-left: 150px;
+  margin-top: 15px;
+  padding: 0;
+  float: left;
+  border-radius: 150px;
 }
+#bienvenida{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
 #sobreMi{
-    border: 3px solid black;
     padding-top: 5px;
     padding-bottom: 15px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
+}
+#texto1{
+    float: left;
+}
+#texto2{
+    float: right;
+}
+#textos_grande{
+    margin: 10%;
+}
+#encabezado{
+    text-align: center;
 }
 #admirando{
     width: 400px;
